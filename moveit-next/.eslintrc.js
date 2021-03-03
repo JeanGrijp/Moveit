@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 module.exports = {
   env: {
     browser: true,
@@ -20,5 +21,6 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'linebreak-style': 0,
   },
 };
