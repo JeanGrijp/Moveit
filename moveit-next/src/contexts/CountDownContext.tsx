@@ -1,5 +1,3 @@
-
-
 import {
   createContext, ReactNode, useContext, useEffect, useState,
 } from 'react';
@@ -33,7 +31,7 @@ export function CountDownProvider({ children }: CountDownProviderProps) {
   const seconds = time % 60;
 
   useEffect(() => {
-		if (isActive && time > 0) {
+    if (isActive && time > 0) {
       countDownTimeout = setTimeout(() => {
         setTime(time - 1);
       }, 1000);

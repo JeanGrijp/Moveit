@@ -3,7 +3,7 @@ import { ChallengeContext } from '../contexts/ChallengeContext';
 import { CountDownContext } from '../contexts/CountDownContext';
 import styles from '../styles/components/ChallengeBox.module.css';
 
-export default function ChallengeBox() {
+export function ChallengeBox() {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengeContext);
   const { resetCountDown } = useContext(CountDownContext);
 
